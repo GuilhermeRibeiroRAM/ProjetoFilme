@@ -1,6 +1,18 @@
+body{
+    background-color: rgb(14, 107, 107);
+}
+
 .lista-filmes{
     max-width: 800px;
     margin: 14px auto;
+}
+
+.elementos-juntos{
+    transition: all 0.4s;
+}
+
+.elementos-juntos:hover{
+    transform: scale(1.05);
 }
 
 .loading{

@@ -46,9 +46,11 @@ export default function Home() {
                     return (
                         <article key={filme.id}>
                             <strong>{filme.title}</strong>
-                            <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title} />
-                            <div className='btn-acessar'>
-                                <Link to={`/filme/${filme.id}`}>Acessar</Link>
+                            <div className='elementos-juntos'>
+                                <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title} />
+                                <div className='btn-acessar'>
+                                    <Link to={`/filme/${filme.id}`}>Acessar</Link>
+                                </div>
                             </div>
                         </article>
                     )
